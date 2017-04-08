@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Kingfisher (3.4.0)
+  - ObjectMapper (2.2.2)
+  - OHHTTPStubs (5.2.3):
+    - OHHTTPStubs/Default (= 5.2.3)
+  - OHHTTPStubs/Core (5.2.3)
+  - OHHTTPStubs/Default (5.2.3):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (5.2.3):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (5.2.3)
+  - OHHTTPStubs/Swift (5.2.3):
+    - OHHTTPStubs/Core
+  - Reqres (2.0.0)
+  - Reveal-SDK (6)
+
+DEPENDENCIES:
+  - Alamofire
+  - Kingfisher
+  - ObjectMapper
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
+  - Reqres
+  - Reveal-SDK
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Kingfisher: 5690cfb3d1bddf3a98d679a3a34d0b7294974ed2
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
+  Reqres: 7027a575c1539c9635ff11ecf04d49cdf30a2f0a
+  Reveal-SDK: 67460e58f93711c7b18631d12c2b5de7740e48b5
+
+PODFILE CHECKSUM: 71cc2cf2b5c28d26da642ed50ae6793e911db17e
+
+COCOAPODS: 1.2.0
