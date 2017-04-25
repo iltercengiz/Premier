@@ -12,6 +12,7 @@ extension Constants {
     
     enum StoryboardName {
         static let topMovies = "TopMovies"
+        static let movieDetail = "MovieDetail"
     }
     
 }

@@ -16,6 +16,10 @@ final class TopMoviesViewController: UIViewController, StoryboardLoadable, Insta
         static let loadingCellHeight: CGFloat = 80.0
     }
     
+    enum Route {
+        case movieDetail(Movie)
+    }
+    
     // MARK: - IBOutlets
     
     @IBOutlet fileprivate weak var tableView: UITableView!
@@ -25,6 +29,7 @@ final class TopMoviesViewController: UIViewController, StoryboardLoadable, Insta
     
     fileprivate var cache = [IndexPath: CGFloat]()
     fileprivate let model = TopMoviesViewModel()
+    fileprivate let router = TopMoviesRouter()
     fileprivate let prototypeCell = TopMoviesTableViewCell.instantiate()
     
     // MARK: - View life cycle
@@ -167,6 +172,10 @@ extension TopMoviesViewController: UITableViewDataSource {
 extension TopMoviesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        router.route(
+            to: .movieDetail(model.state.movies[indexPath.row]),
+            from: self
+        )
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

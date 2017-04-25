@@ -49,6 +49,10 @@
 		367A5A041E59F09000F3268A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A5A031E59F09000F3268A /* Constants.swift */; };
 		367A5A061E59F1B100F3268A /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A5A051E59F1B100F3268A /* DateTransform.swift */; };
 		367A5A081E59F36900F3268A /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367A5A071E59F36900F3268A /* PaginatedResponse.swift */; };
+		369C80131EAF2FB7008B37DD /* MovieDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369C80121EAF2FB7008B37DD /* MovieDetail.storyboard */; };
+		369C80151EAF32AE008B37DD /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C80141EAF32AE008B37DD /* MovieDetailViewController.swift */; };
+		369C80171EAF3392008B37DD /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C80161EAF3392008B37DD /* MovieDetailViewModel.swift */; };
+		369C80191EAF3531008B37DD /* TopMoviesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369C80181EAF3531008B37DD /* TopMoviesRouter.swift */; };
 		66FEAA6E9B84AA35CFBCAADF /* Pods_PremierSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */; };
 		7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874585AA1E6485D5616D1D /* Pods_PremierSwift.framework */; };
 /* End PBXBuildFile section */
@@ -109,6 +113,10 @@
 		367A5A031E59F09000F3268A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		367A5A051E59F1B100F3268A /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
 		367A5A071E59F36900F3268A /* PaginatedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
+		369C80121EAF2FB7008B37DD /* MovieDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MovieDetail.storyboard; sourceTree = "<group>"; };
+		369C80141EAF32AE008B37DD /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		369C80161EAF3392008B37DD /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		369C80181EAF3531008B37DD /* TopMoviesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopMoviesRouter.swift; sourceTree = "<group>"; };
 		45F7B29433F827EA65632873 /* Pods-PremierSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwiftTests/Pods-PremierSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		776BB60C6BD5B87A6EB6F38D /* Pods-PremierSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwift/Pods-PremierSwift.release.xcconfig"; sourceTree = "<group>"; };
 		8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PremierSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				365DC83A1E5A2BC8005327AB /* TopMovies */,
+				369C80111EAF2FA1008B37DD /* MovieDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 				365DC8651E5A395C005327AB /* TopMoviesState.swift */,
 				365DC8511E5A3104005327AB /* TopMoviesTableViewCell.swift */,
 				365DC8531E5A310E005327AB /* TopMoviesTableViewCell.xib */,
+				369C80181EAF3531008B37DD /* TopMoviesRouter.swift */,
 			);
 			path = TopMovies;
 			sourceTree = "<group>";
@@ -385,6 +395,16 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		369C80111EAF2FA1008B37DD /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				369C80121EAF2FB7008B37DD /* MovieDetail.storyboard */,
+				369C80141EAF32AE008B37DD /* MovieDetailViewController.swift */,
+				369C80161EAF3392008B37DD /* MovieDetailViewModel.swift */,
+			);
+			path = MovieDetail;
+			sourceTree = "<group>";
+		};
 		3744D9BA52FB77976CA1CB48 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +563,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369C80131EAF2FB7008B37DD /* MovieDetail.storyboard in Resources */,
 				365DC85D1E5A3667005327AB /* LoadingTableViewCell.xib in Resources */,
 				365DC83E1E5A2C06005327AB /* TopMovies.storyboard in Resources */,
 				365DC8221E5A099D005327AB /* Assets.xcassets in Resources */,
@@ -575,7 +596,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3115BF76F109F345722D725C /* [CP] Copy Pods Resources */ = {
@@ -619,7 +640,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5D7A9BE43A81875491EE943C /* [CP] Embed Pods Frameworks */ = {
@@ -688,6 +709,7 @@
 				365DC82B1E5A1DDD005327AB /* TopRatedMoviesRequest.swift in Sources */,
 				365DC8461E5A2C93005327AB /* Instantiatable.swift in Sources */,
 				367A5A041E59F09000F3268A /* Constants.swift in Sources */,
+				369C80171EAF3392008B37DD /* MovieDetailViewModel.swift in Sources */,
 				367A59FD1E59EA8700F3268A /* ImageURLTransform.swift in Sources */,
 				365DC8521E5A3104005327AB /* TopMoviesTableViewCell.swift in Sources */,
 				365DC8621E5A3892005327AB /* CollectionChange.swift in Sources */,
@@ -705,6 +727,8 @@
 				365DC8361E5A2A10005327AB /* AppDelegate.swift in Sources */,
 				365DC8381E5A2A37005327AB /* AppRouter.swift in Sources */,
 				367A59E61E59DF8700F3268A /* Response.swift in Sources */,
+				369C80151EAF32AE008B37DD /* MovieDetailViewController.swift in Sources */,
+				369C80191EAF3531008B37DD /* TopMoviesRouter.swift in Sources */,
 				365DC8681E5A39B7005327AB /* ActivityTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
