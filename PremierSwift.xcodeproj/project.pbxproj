@@ -228,6 +228,7 @@
 				365DC8401E5A2C49005327AB /* ViewLoaders */,
 				365DC8551E5A31DE005327AB /* ReuseIdentifier.swift */,
 			);
+			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -259,13 +260,14 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		365DC8591E5A364C005327AB /* TableViewCell */ = {
+		365DC8591E5A364C005327AB /* LoadingTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				365DC85A1E5A3667005327AB /* LoadingTableViewCell.swift */,
 				365DC85B1E5A3667005327AB /* LoadingTableViewCell.xib */,
 			);
-			path = TableViewCell;
+			name = LoadingTableViewCell;
+			path = LoadingTableViewCell;
 			sourceTree = "<group>";
 		};
 		365DC85E1E5A3871005327AB /* Helpers */ = {
@@ -361,8 +363,6 @@
 			isa = PBXGroup;
 			children = (
 				365DC85E1E5A3871005327AB /* Helpers */,
-				365DC8591E5A364C005327AB /* TableViewCell */,
-				365DC83F1E5A2C37005327AB /* Protocols */,
 				367A59FB1E59EA5D00F3268A /* Transformers */,
 			);
 			path = Reusables;
@@ -403,6 +403,14 @@
 				369C80161EAF3392008B37DD /* MovieDetailViewModel.swift */,
 			);
 			path = MovieDetail;
+			sourceTree = "<group>";
+		};
+		36A209E11ECF21C000443230 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				365DC8591E5A364C005327AB /* LoadingTableViewCell */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		3744D9BA52FB77976CA1CB48 /* Pods */ = {
@@ -450,12 +458,14 @@
 			children = (
 				365DC8341E5A29F7005327AB /* Application */,
 				367A5A021E59F08000F3268A /* Constants */,
-				367A59FF1E59EF9800F3268A /* Extensions */,
-				367A59FA1E59EA5000F3268A /* Reusables */,
 				367A59F61E59E71900F3268A /* Model */,
 				365DC8391E5A2BB1005327AB /* Scenes */,
-				365DC8491E5A2D88005327AB /* Styling */,
 				367A59DC1E59DD6900F3268A /* Networking */,
+				367A59FF1E59EF9800F3268A /* Extensions */,
+				36A209E11ECF21C000443230 /* Components */,
+				367A59FA1E59EA5000F3268A /* Reusables */,
+				365DC83F1E5A2C37005327AB /* Protocols */,
+				365DC8491E5A2D88005327AB /* Styling */,
 				365DC81E1E5A0961005327AB /* Resources */,
 			);
 			path = PremierSwift;
