@@ -8,18 +8,12 @@
 
 import Foundation
 
-enum TopMoviesError {
-    case connectionError(Error)
-    case mappingFailed
-    case reloadFailed
-}
-
-class TopMoviesViewModel {
+class TopMoviesViewModel: MovieListViewModel {
     
-    fileprivate(set) var state = TopMoviesState()
+    fileprivate(set) var state = MovieListState()
     
-    var stateChangeHandler: ((TopMoviesState.Change) -> Void)?
-    var errorHandler: ((TopMoviesError) -> Void)?
+    var stateChangeHandler: ((MovieListState.Change) -> Void)?
+    var errorHandler: ((MovieListError) -> Void)?
     
     func reloadMovies() {
         fetchMovies(at: 1) {
@@ -65,14 +59,6 @@ private extension TopMoviesViewModel {
             }
             strongSelf.emit(change: strongSelf.state.removeActivity())
         }
-    }
-    
-    func emit(change: TopMoviesState.Change) {
-        stateChangeHandler?(change)
-    }
-    
-    func emit(error: TopMoviesError) {
-        errorHandler?(error)
     }
     
 }

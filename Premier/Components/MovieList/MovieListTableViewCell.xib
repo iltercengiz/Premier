@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieListTableViewCell" rowHeight="280" id="zSq-eq-JEt" customClass="MovieListTableViewCell" customModule="Premier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zSq-eq-JEt" id="z4k-Dh-XuI">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="279.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3CR-fm-9h8">
+                        <rect key="frame" x="15" y="15" width="345" height="195.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="28M-Zi-sXo">
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnJ-vQ-v7v">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="Ias-mM-A00"/>
+                                            <constraint firstAttribute="width" constant="110" id="n2D-PZ-1wf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKu-l2-5yF">
+                                        <rect key="frame" x="125" y="0.0" width="220" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Overview" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1K-ZY-DYp">
+                                <rect key="frame" x="0.0" y="175" width="345" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3CR-fm-9h8" firstAttribute="leading" secondItem="z4k-Dh-XuI" secondAttribute="leading" constant="15" id="4jw-xr-Ams"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3CR-fm-9h8" secondAttribute="bottom" constant="15" id="Weq-NF-LYk"/>
+                    <constraint firstAttribute="trailing" secondItem="3CR-fm-9h8" secondAttribute="trailing" constant="15" id="rSz-kO-j2L"/>
+                    <constraint firstItem="3CR-fm-9h8" firstAttribute="top" secondItem="z4k-Dh-XuI" secondAttribute="top" constant="15" id="rkS-oH-S8v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="overviewLabel" destination="z1K-ZY-DYp" id="IBk-Dz-Nyc"/>
+                <outlet property="posterImageView" destination="TnJ-vQ-v7v" id="zgG-di-XIN"/>
+                <outlet property="titleLabel" destination="rKu-l2-5yF" id="HVZ-KL-c0O"/>
+            </connections>
+            <point key="canvasLocation" x="-181.5" y="8"/>
+        </tableViewCell>
+    </objects>
+</document>

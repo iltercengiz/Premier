@@ -8,11 +8,11 @@
 
 import UIKit
 
-struct TopMoviesRouter {
+struct TopMoviesRouter: MovieListRouter {
     
-    func route(to route: TopMoviesViewController.Route, from source: UIViewController) {
+    func route(to route: MovieListViewController.Route, from source: MovieListViewController) {
         switch route {
-        case .movieDetail(let movie):
+        case .movie(let movie):
             routeToMovieDetail(with: movie, from: source)
         }
     }

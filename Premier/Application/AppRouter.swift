@@ -20,6 +20,8 @@ class AppRouter {
     
     func presentMainFlow() {
         let topMoviesViewController = TopMoviesViewController.instantiate()
+        topMoviesViewController.model = TopMoviesViewModel()
+        topMoviesViewController.router = TopMoviesRouter()
         let navigationController = UINavigationController(rootViewController: topMoviesViewController)
         appWindow?.rootViewController = navigationController
         appWindow?.makeKeyAndVisible()

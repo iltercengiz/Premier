@@ -1,14 +1,14 @@
 //
-//  TopMoviesState.swift
-//  PremierSwift
+//  MovieListState.swift
+//  Premier
 //
-//  Created by Ilter Cengiz on 19/02/2017.
+//  Created by Ilter Cengiz on 19/05/2017.
 //  Copyright © 2017 Deliveroo. All rights reserved.
 //
 
 import Foundation
 
-struct TopMoviesState {
+struct MovieListState {
     fileprivate(set) var movies: [Movie] = []
     fileprivate(set) var loading: ActivityTracker = ActivityTracker()
     fileprivate(set) var currentPage: Int = 1
@@ -18,7 +18,7 @@ struct TopMoviesState {
     }
 }
 
-extension TopMoviesState {
+extension MovieListState {
     
     enum Change {
         case none
@@ -51,23 +51,6 @@ extension TopMoviesState {
     mutating func removeActivity() -> Change {
         loading.removeActivity()
         return .loadingChanged(loading)
-    }
-    
-}
-
-extension TopMoviesState.Change: Equatable {
-    
-    public static func ==(lhs: TopMoviesState.Change, rhs: TopMoviesState.Change) -> Bool {
-        switch (lhs, rhs) {
-        case (.none, .none):
-            return true
-        case (.moviesChanged(let collectionChange1), .moviesChanged(let collectionChange2)):
-            return collectionChange1 == collectionChange2
-        case (.loadingChanged(let activityTracker1), .loadingChanged(let activityTracker2)):
-            return activityTracker1 == activityTracker2
-        default:
-            return false
-        }
     }
     
 }
