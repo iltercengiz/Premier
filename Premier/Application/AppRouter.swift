@@ -23,7 +23,11 @@ class AppRouter {
         topMoviesViewController.model = TopMoviesViewModel()
         topMoviesViewController.router = TopMoviesRouter()
         let navigationController = UINavigationController(rootViewController: topMoviesViewController)
-        appWindow?.rootViewController = navigationController
+        
+        let rootTabBarController = RootTabBarController.instantiate()
+        rootTabBarController.viewControllers = [navigationController]
+        
+        appWindow?.rootViewController = rootTabBarController
         appWindow?.makeKeyAndVisible()
     }
     

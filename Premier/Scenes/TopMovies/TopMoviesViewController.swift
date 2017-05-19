@@ -12,4 +12,19 @@ final class TopMoviesViewController: MovieListViewController, StoryboardLoadable
     
     static var defaultStoryboardName: String = Constants.StoryboardName.topMovies
     
+    // MARK: - View life cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+}
+
+private extension TopMoviesViewController {
+    
+    func setup() {
+        tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+    }
+    
 }
