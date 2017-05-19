@@ -12,6 +12,8 @@ final class TopMoviesViewController: MovieListViewController, StoryboardLoadable
     
     static var defaultStoryboardName: String = Constants.StoryboardName.topMovies
     
+    @IBOutlet fileprivate weak var loadingLabel: UILabel!
+    
     // MARK: - View life cycle
     
     override func viewDidLoad() {
@@ -24,7 +26,9 @@ final class TopMoviesViewController: MovieListViewController, StoryboardLoadable
 private extension TopMoviesViewController {
     
     func setup() {
+        title = Localization.topMovies.string(for: "TOP_MOVIES")
         tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+        loadingLabel.text = Localization.common.string(for: "LOADING")
     }
     
 }
