@@ -11,7 +11,7 @@ import XCTest
 
 class SearchTests: XCTestCase {
     
-    let model = SearchViewModel()
+    let model = SearchViewModel(lastSearchesManager: LastSearchesManager())
     
     override func setUp() {
         super.setUp()
