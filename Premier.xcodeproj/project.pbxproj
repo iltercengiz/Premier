@@ -69,6 +69,8 @@
 		36A20A2A1ED1DE7300443230 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A291ED1DE7300443230 /* SearchTests.swift */; };
 		36A20A2C1ED1DE8D00443230 /* LastSearchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A2B1ED1DE8D00443230 /* LastSearchesManager.swift */; };
 		36A20A2E1ED1FF8B00443230 /* LastSearchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A2D1ED1FF8B00443230 /* LastSearchesTests.swift */; };
+		36A20A301ED2103400443230 /* LastSearchesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A2F1ED2103400443230 /* LastSearchesDataSource.swift */; };
+		36A20A321ED210DD00443230 /* LastSearchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A311ED210DD00443230 /* LastSearchesTableViewCell.swift */; };
 		66FEAA6E9B84AA35CFBCAADF /* Pods_PremierSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */; };
 		7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874585AA1E6485D5616D1D /* Pods_PremierSwift.framework */; };
 /* End PBXBuildFile section */
@@ -149,6 +151,8 @@
 		36A20A291ED1DE7300443230 /* SearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		36A20A2B1ED1DE8D00443230 /* LastSearchesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesManager.swift; sourceTree = "<group>"; };
 		36A20A2D1ED1FF8B00443230 /* LastSearchesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesTests.swift; sourceTree = "<group>"; };
+		36A20A2F1ED2103400443230 /* LastSearchesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesDataSource.swift; sourceTree = "<group>"; };
+		36A20A311ED210DD00443230 /* LastSearchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesTableViewCell.swift; sourceTree = "<group>"; };
 		45F7B29433F827EA65632873 /* Pods-PremierSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwiftTests/Pods-PremierSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		776BB60C6BD5B87A6EB6F38D /* Pods-PremierSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwift/Pods-PremierSwift.release.xcconfig"; sourceTree = "<group>"; };
 		8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PremierSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -493,6 +497,8 @@
 				36A20A011ECF3D6B00443230 /* SearchViewController.swift */,
 				36A20A031ECF403000443230 /* SearchViewModel.swift */,
 				36A20A2B1ED1DE8D00443230 /* LastSearchesManager.swift */,
+				36A20A2F1ED2103400443230 /* LastSearchesDataSource.swift */,
+				36A20A311ED210DD00443230 /* LastSearchesTableViewCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -846,6 +852,7 @@
 				36A209EC1ECF298200443230 /* MovieListViewModel.swift in Sources */,
 				367A5A081E59F36900F3268A /* PaginatedResponse.swift in Sources */,
 				367A5A061E59F1B100F3268A /* DateTransform.swift in Sources */,
+				36A20A301ED2103400443230 /* LastSearchesDataSource.swift in Sources */,
 				365DC83C1E5A2BE1005327AB /* TopMoviesViewController.swift in Sources */,
 				367A59F91E59E73B00F3268A /* Movie.swift in Sources */,
 				365DC86C1E5B5E6B005327AB /* PaginatedListSection.swift in Sources */,
@@ -860,6 +867,7 @@
 				367A59E61E59DF8700F3268A /* Response.swift in Sources */,
 				36A20A041ECF403000443230 /* SearchViewModel.swift in Sources */,
 				36A209F01ECF2B7A00443230 /* MovieListRouter.swift in Sources */,
+				36A20A321ED210DD00443230 /* LastSearchesTableViewCell.swift in Sources */,
 				369C80151EAF32AE008B37DD /* MovieDetailViewController.swift in Sources */,
 				369C80191EAF3531008B37DD /* TopMoviesRouter.swift in Sources */,
 				36A209E71ECF27A400443230 /* MovieListTableViewCell.swift in Sources */,

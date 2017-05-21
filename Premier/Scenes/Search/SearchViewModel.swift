@@ -16,10 +16,14 @@ class SearchViewModel: MovieListViewModel {
             reloadMovies()
         }
     }
-    fileprivate let lastSearchesManager = LastSearchesManager()
+    let lastSearchesManager: LastSearchesManager
     
     var stateChangeHandler: ((MovieListState.Change) -> Void)?
     var errorHandler: ((MovieListError) -> Void)?
+    
+    init(lastSearchesManager: LastSearchesManager) {
+        self.lastSearchesManager = lastSearchesManager
+    }
     
     func reloadMovies() {
         guard let query = currentQuery else { return }

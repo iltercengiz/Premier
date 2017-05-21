@@ -13,7 +13,8 @@ final class SearchViewController: MovieListViewController, StoryboardLoadable, I
     static var defaultStoryboardName: String = Constants.StoryboardName.search
     
     fileprivate weak var searchBar: UISearchBar!
-    @IBOutlet fileprivate weak var suggestionsTableView: UITableView!
+    @IBOutlet fileprivate weak var lastSearchesTableView: UITableView!
+    var lastSearchesDataSource: LastSearchesDataSource!
     
     // MARK: - View life cycle
     
@@ -33,7 +34,8 @@ private extension SearchViewController {
         navigationItem.titleView = searchBar
         self.searchBar = searchBar
         
-        suggestionsTableView.isHidden = true
+        lastSearchesTableView.isHidden = true
+        lastSearchesTableView.dataSource = lastSearchesDataSource
     }
     
 }
@@ -42,7 +44,8 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         defer {
-            suggestionsTableView.isHidden = false
+            lastSearchesTableView.reloadData()
+            lastSearchesTableView.isHidden = false
             searchBar.setShowsCancelButton(true, animated: true)
         }
         return true
@@ -50,7 +53,7 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
         defer {
-            suggestionsTableView.isHidden = true
+            lastSearchesTableView.isHidden = true
             searchBar.setShowsCancelButton(false, animated: true)
         }
         return true

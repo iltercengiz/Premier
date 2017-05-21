@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SuggestionsTableViewCell" textLabel="hSh-w3-IcP" style="IBUITableViewCellStyleDefault" id="d0o-WO-BhU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LastSearchesTableViewCell" textLabel="hSh-w3-IcP" style="IBUITableViewCellStyleDefault" id="d0o-WO-BhU" customClass="LastSearchesTableViewCell" customModule="Premier" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d0o-WO-BhU" id="PeL-KV-TOo">
@@ -124,8 +124,8 @@
                     <navigationItem key="navigationItem" id="1SS-rg-u4l"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="lastSearchesTableView" destination="rFz-Gn-T3r" id="RmF-fQ-6wa"/>
                         <outlet property="loadingIndicatorView" destination="yPz-qd-Pdc" id="gCJ-j1-0lY"/>
-                        <outlet property="suggestionsTableView" destination="rFz-Gn-T3r" id="kY6-k0-g6X"/>
                         <outlet property="tableView" destination="k4S-uC-gWQ" id="chg-7F-Z2f"/>
                     </connections>
                 </viewController>

@@ -30,7 +30,9 @@ private extension RootTabBarController {
         
         let searchViewController = SearchViewController.instantiate()
         searchViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        searchViewController.model = SearchViewModel()
+        let lastSearchesManager = LastSearchesManager()
+        searchViewController.model = SearchViewModel(lastSearchesManager: lastSearchesManager)
+        searchViewController.lastSearchesDataSource = LastSearchesDataSource(lastSearchesManager: lastSearchesManager)
         // TODO: router
         let searchNavigationController = UINavigationController(rootViewController: searchViewController)
         
