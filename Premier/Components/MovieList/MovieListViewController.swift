@@ -57,33 +57,6 @@ class MovieListViewController: UIViewController {
         model.reloadMovies()
     }
     
-}
-
-// MARK: - UI
-
-private extension MovieListViewController {
-    
-    func bindViewModel() {
-        model.stateChangeHandler = handleStateChange
-        model.errorHandler = handleError
-    }
-    
-    func setup() {
-        loadingIndicatorView?.isHidden = true
-        
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(reloadMovies), for: .valueChanged)
-        tableView.insertSubview(refreshControl, at: 0)
-        self.refreshControl = refreshControl
-    }
-    
-    func registerCells() {
-        tableView.register(MovieListTableViewCell.defaultNib,
-                           forCellReuseIdentifier: MovieListTableViewCell.defaultReuseIdentifier)
-        tableView.register(LoadingTableViewCell.defaultNib,
-                           forCellReuseIdentifier: LoadingTableViewCell.defaultReuseIdentifier)
-    }
-    
     // MARK: Handlers
     
     func handleStateChange(change: MovieListState.Change) {
@@ -129,6 +102,33 @@ private extension MovieListViewController {
     
     func handleError(error: MovieListError) {
         // TODO: Error handling
+    }
+    
+}
+
+// MARK: - UI
+
+private extension MovieListViewController {
+    
+    func bindViewModel() {
+        model.stateChangeHandler = handleStateChange
+        model.errorHandler = handleError
+    }
+    
+    func setup() {
+        loadingIndicatorView?.isHidden = true
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(reloadMovies), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        self.refreshControl = refreshControl
+    }
+    
+    func registerCells() {
+        tableView.register(MovieListTableViewCell.defaultNib,
+                           forCellReuseIdentifier: MovieListTableViewCell.defaultReuseIdentifier)
+        tableView.register(LoadingTableViewCell.defaultNib,
+                           forCellReuseIdentifier: LoadingTableViewCell.defaultReuseIdentifier)
     }
     
     // MARK: Size calculations
