@@ -34,7 +34,7 @@ private extension RootTabBarController {
         searchViewController.model = SearchViewModel(lastSearchesManager: lastSearchesManager)
         searchViewController.lastSearchesDataSource = LastSearchesDataSource(lastSearchesManager: lastSearchesManager)
         searchViewController.lastSearchesDelegate = LastSearchesDelegate(lastSearchesManager: lastSearchesManager)
-        // TODO: router
+        searchViewController.router = SearchRouter()
         let searchNavigationController = UINavigationController(rootViewController: searchViewController)
         
         viewControllers = [topMoviesNavigationController, searchNavigationController]
