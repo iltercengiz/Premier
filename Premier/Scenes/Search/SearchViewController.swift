@@ -65,6 +65,9 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+        if searchBar.text?.isEmpty == true {
+            (model as? SearchViewModel)?.clearMovies()
+        }
     }
     
 }

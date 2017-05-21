@@ -39,6 +39,11 @@ class SearchViewModel: MovieListViewModel {
         }
     }
     
+    func clearMovies() {
+        state.update(currentPage: 0, totalPages: 0)
+        emit(change: state.reload(movies: []))
+    }
+    
 }
 
 private extension SearchViewModel {
