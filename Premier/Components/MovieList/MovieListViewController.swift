@@ -78,6 +78,9 @@ private extension MovieListViewController {
         case .moviesChanged(let collectionChange):
             switch collectionChange {
             case .reload:
+                // Clear empty size cache
+                cache.removeAll()
+                // Reload table view by applying collection change
                 tableView.applyCollectionChange(collectionChange,
                                                 toSection: PaginatedListSection.content.rawValue,
                                                 withAnimation: .fade)
