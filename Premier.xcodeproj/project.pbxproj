@@ -68,6 +68,7 @@
 		36A20A271ED1DE5400443230 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 36A20A261ED1DE5400443230 /* search.json */; };
 		36A20A2A1ED1DE7300443230 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A291ED1DE7300443230 /* SearchTests.swift */; };
 		36A20A2C1ED1DE8D00443230 /* LastSearchesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A2B1ED1DE8D00443230 /* LastSearchesManager.swift */; };
+		36A20A2E1ED1FF8B00443230 /* LastSearchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A2D1ED1FF8B00443230 /* LastSearchesTests.swift */; };
 		66FEAA6E9B84AA35CFBCAADF /* Pods_PremierSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */; };
 		7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874585AA1E6485D5616D1D /* Pods_PremierSwift.framework */; };
 /* End PBXBuildFile section */
@@ -147,6 +148,7 @@
 		36A20A261ED1DE5400443230 /* search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
 		36A20A291ED1DE7300443230 /* SearchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		36A20A2B1ED1DE8D00443230 /* LastSearchesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesManager.swift; sourceTree = "<group>"; };
+		36A20A2D1ED1FF8B00443230 /* LastSearchesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesTests.swift; sourceTree = "<group>"; };
 		45F7B29433F827EA65632873 /* Pods-PremierSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwiftTests/Pods-PremierSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		776BB60C6BD5B87A6EB6F38D /* Pods-PremierSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwift/Pods-PremierSwift.release.xcconfig"; sourceTree = "<group>"; };
 		8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PremierSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -515,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				36A20A291ED1DE7300443230 /* SearchTests.swift */,
+				36A20A2D1ED1FF8B00443230 /* LastSearchesTests.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -870,6 +873,7 @@
 			files = (
 				367A59ED1E59E45600F3268A /* MovieDatabaseClientTests.swift in Sources */,
 				36A20A2A1ED1DE7300443230 /* SearchTests.swift in Sources */,
+				36A20A2E1ED1FF8B00443230 /* LastSearchesTests.swift in Sources */,
 				365DC8311E5A2149005327AB /* Stubber.swift in Sources */,
 				365DC8701E5B609A005327AB /* TopMoviesTests.swift in Sources */,
 			);
