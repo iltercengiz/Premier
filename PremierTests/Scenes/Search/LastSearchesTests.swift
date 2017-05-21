@@ -62,4 +62,14 @@ class LastSearchesTests: XCTestCase {
         XCTAssertEqual(lastSearchesManager.lastSearches.last, "Test query 2")
     }
     
+    func testSearchAgain() {
+        lastSearchesManager.addSearchQuery("Test query 1") // 1
+        lastSearchesManager.addSearchQuery("Test query 2") // 2, 1
+        lastSearchesManager.addSearchQuery("Test query 3") // 3, 2, 1
+        lastSearchesManager.addSearchQuery("Test query 1") // 1, 3, 2
+        XCTAssertEqual(lastSearchesManager.lastSearches.count, 3)
+        XCTAssertEqual(lastSearchesManager.lastSearches.first, "Test query 1")
+        XCTAssertEqual(lastSearchesManager.lastSearches.last, "Test query 2")
+    }
+    
 }
