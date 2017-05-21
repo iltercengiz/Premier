@@ -19,6 +19,7 @@ final class MovieListTableViewCell: UITableViewCell, NibLoadable, Instantiatable
         }
     }
     @IBOutlet fileprivate weak var titleLabel: UILabel!
+    @IBOutlet fileprivate weak var releaseDateLabel: UILabel!
     @IBOutlet fileprivate weak var overviewLabel: UILabel!
     
     // MARK: - View life cycle
@@ -45,6 +46,9 @@ final class MovieListTableViewCell: UITableViewCell, NibLoadable, Instantiatable
                                     progressBlock: nil,
                                     completionHandler: nil)
         titleLabel.text = movie.title
+        if let date = movie.releaseDate {
+            releaseDateLabel.text = DateFormatter.string(from: date, format: "yyyy")
+        }
         overviewLabel.text = movie.overview
     }
     
