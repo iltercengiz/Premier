@@ -27,6 +27,7 @@ class MovieListViewController: UIViewController {
     
     @IBOutlet fileprivate weak var tableView: UITableView!
     @IBOutlet fileprivate weak var loadingIndicatorView: UIView?
+    fileprivate weak var refreshControl: UIRefreshControl?
     
     // MARK: - Properties
     
@@ -46,6 +47,13 @@ class MovieListViewController: UIViewController {
         bindViewModel()
         setup()
         registerCells()
+        reloadMovies()
+    }
+    
+    // MARK: - Actions
+    
+    /// Used to set as action for refresh control
+    func reloadMovies() {
         model.reloadMovies()
     }
     
@@ -62,6 +70,11 @@ private extension MovieListViewController {
     
     func setup() {
         loadingIndicatorView?.isHidden = true
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(reloadMovies), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
+        self.refreshControl = refreshControl
     }
     
     func registerCells() {
@@ -89,6 +102,8 @@ private extension MovieListViewController {
                 } else {
                     // TODO: Dismiss empty state
                 }
+                // Stop refresh control
+                refreshControl?.endRefreshing()
             default:
                 tableView.beginUpdates()
                 if !model.state.hasNextPage {
