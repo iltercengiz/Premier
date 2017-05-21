@@ -61,7 +61,7 @@ private extension MovieListViewController {
     }
     
     func setup() {
-        // Do any UI setup here
+        loadingIndicatorView?.isHidden = true
     }
     
     func registerCells() {
