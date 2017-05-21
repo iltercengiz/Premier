@@ -16,6 +16,7 @@ class SearchViewModel: MovieListViewModel {
             reloadMovies()
         }
     }
+    fileprivate let lastSearchesManager = LastSearchesManager()
     
     var stateChangeHandler: ((MovieListState.Change) -> Void)?
     var errorHandler: ((MovieListError) -> Void)?
@@ -26,6 +27,9 @@ class SearchViewModel: MovieListViewModel {
             [weak self] (movies: [Movie]) in
             guard let strongSelf = self else { return }
             strongSelf.emit(change: strongSelf.state.reload(movies: movies))
+            
+            // If query return some movies, add query to last searches list.
+            strongSelf.lastSearchesManager.addSearchQuery(query)
         }
     }
     
