@@ -87,9 +87,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iOB-3T-9Ys" firstAttribute="top" secondItem="ynO-1w-ikp" secondAttribute="top" id="ObJ-JX-Wz5"/>
-                            <constraint firstAttribute="trailing" secondItem="iOB-3T-9Ys" secondAttribute="trailing" id="aYe-Jl-rZ3"/>
+                            <constraint firstItem="iOB-3T-9Ys" firstAttribute="bottom" secondItem="ynO-1w-ikp" secondAttribute="bottom" id="Rba-1c-RAJ"/>
+                            <constraint firstItem="iOB-3T-9Ys" firstAttribute="trailing" secondItem="ynO-1w-ikp" secondAttribute="trailing" id="aYe-Jl-rZ3"/>
                             <constraint firstItem="spW-zJ-ZkR" firstAttribute="centerX" secondItem="ynO-1w-ikp" secondAttribute="centerX" id="bSi-Zv-AbV"/>
-                            <constraint firstItem="9YR-c8-9fT" firstAttribute="top" secondItem="iOB-3T-9Ys" secondAttribute="bottom" id="e0Z-w7-YHa"/>
                             <constraint firstItem="spW-zJ-ZkR" firstAttribute="centerY" secondItem="ynO-1w-ikp" secondAttribute="centerY" id="phS-gb-C5M"/>
                             <constraint firstItem="iOB-3T-9Ys" firstAttribute="leading" secondItem="ynO-1w-ikp" secondAttribute="leading" id="und-x3-mXM"/>
                         </constraints>

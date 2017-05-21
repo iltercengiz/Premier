@@ -110,7 +110,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rFz-Gn-T3r" firstAttribute="bottom" secondItem="7Xb-gU-Oyp" secondAttribute="top" id="EL0-Yh-WZl"/>
-                            <constraint firstItem="k4S-uC-gWQ" firstAttribute="bottom" secondItem="7Xb-gU-Oyp" secondAttribute="top" id="JNP-6u-q4J"/>
                             <constraint firstItem="rFz-Gn-T3r" firstAttribute="top" secondItem="83w-ge-ao4" secondAttribute="bottom" id="YFH-MT-3Cy"/>
                             <constraint firstItem="rFz-Gn-T3r" firstAttribute="leading" secondItem="o6u-1e-Tph" secondAttribute="leading" id="agp-AJ-t5i"/>
                             <constraint firstItem="yPz-qd-Pdc" firstAttribute="centerX" secondItem="o6u-1e-Tph" secondAttribute="centerX" id="cBe-ux-Yy8"/>
@@ -119,6 +118,7 @@
                             <constraint firstItem="k4S-uC-gWQ" firstAttribute="top" secondItem="o6u-1e-Tph" secondAttribute="top" id="idk-32-cc4"/>
                             <constraint firstItem="rFz-Gn-T3r" firstAttribute="trailing" secondItem="o6u-1e-Tph" secondAttribute="trailing" id="mwW-8b-WzQ"/>
                             <constraint firstItem="yPz-qd-Pdc" firstAttribute="centerY" secondItem="o6u-1e-Tph" secondAttribute="centerY" id="tpE-Fg-VjA"/>
+                            <constraint firstItem="k4S-uC-gWQ" firstAttribute="bottom" secondItem="o6u-1e-Tph" secondAttribute="bottom" id="xdt-Qd-QpD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1SS-rg-u4l"/>
