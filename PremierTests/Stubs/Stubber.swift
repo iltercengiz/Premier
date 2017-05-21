@@ -39,4 +39,9 @@ extension Stubber {
                     queryParameters: ["page": "2"])
     }
     
+    static func stubSearch() {
+        stubRequest(for: "/3/search/movie",
+                    JSONName: "search.json")
+    }
+    
 }
