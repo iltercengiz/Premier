@@ -191,12 +191,13 @@
 			path = Stubs;
 			sourceTree = "<group>";
 		};
-		365DC8291E5A1DC8005327AB /* Movies */ = {
+		365DC8291E5A1DC8005327AB /* TopMovies */ = {
 			isa = PBXGroup;
 			children = (
 				365DC82A1E5A1DDD005327AB /* TopRatedMoviesRequest.swift */,
 			);
-			path = Movies;
+			name = TopMovies;
+			path = TopMovies;
 			sourceTree = "<group>";
 		};
 		365DC82D1E5A1E2F005327AB /* movie */ = {
@@ -344,7 +345,7 @@
 		367A59EE1E59E4EB00F3268A /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				365DC8291E5A1DC8005327AB /* Movies */,
+				365DC8291E5A1DC8005327AB /* TopMovies */,
 				36A20A051ECF408300443230 /* Search */,
 			);
 			path = Requests;
