@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-@testable import PremierSwift
+@testable import Premier
 
 class MovieDatabaseClientTests: XCTestCase {
     

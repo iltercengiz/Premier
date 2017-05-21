@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import PremierSwift
+@testable import Premier
 
 class TopMoviesTests: XCTestCase {
     

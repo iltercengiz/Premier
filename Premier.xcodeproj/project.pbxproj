@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				365DC8301E5A2149005327AB /* Stubber.swift */,
-				365DC82D1E5A1E2F005327AB /* movie */,
+				365DC82D1E5A1E2F005327AB /* TopMovies */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -202,17 +202,17 @@
 			children = (
 				365DC82A1E5A1DDD005327AB /* TopRatedMoviesRequest.swift */,
 			);
-			name = TopMovies;
 			path = TopMovies;
 			sourceTree = "<group>";
 		};
-		365DC82D1E5A1E2F005327AB /* movie */ = {
+		365DC82D1E5A1E2F005327AB /* TopMovies */ = {
 			isa = PBXGroup;
 			children = (
 				365DC82E1E5A1E53005327AB /* top_rated_page_1.json */,
 				365DC8711E5B6600005327AB /* top_rated_page_2.json */,
 			);
-			path = movie;
+			name = TopMovies;
+			path = TopMovies;
 			sourceTree = "<group>";
 		};
 		365DC8341E5A29F7005327AB /* Application */ = {
