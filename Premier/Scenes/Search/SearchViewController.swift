@@ -15,12 +15,14 @@ final class SearchViewController: MovieListViewController, StoryboardLoadable, I
     fileprivate weak var searchBar: UISearchBar!
     @IBOutlet fileprivate weak var lastSearchesTableView: UITableView!
     var lastSearchesDataSource: LastSearchesDataSource!
+    var lastSearchesDelegate: LastSearchesDelegate!
     
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        bindLastSearches()
     }
     
 }
@@ -35,7 +37,19 @@ private extension SearchViewController {
         self.searchBar = searchBar
         
         lastSearchesTableView.isHidden = true
+    }
+    
+    func bindLastSearches() {
         lastSearchesTableView.dataSource = lastSearchesDataSource
+        lastSearchesTableView.delegate = lastSearchesDelegate
+        lastSearchesDelegate.selectionHandler = {
+            [weak self] query in
+            if let model = self?.model as? SearchViewModel {
+                model.currentQuery = query
+            }
+            self?.searchBar.text = query
+            self?.searchBar.resignFirstResponder()
+        }
     }
     
 }
