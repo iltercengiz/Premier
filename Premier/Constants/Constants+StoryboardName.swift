@@ -13,6 +13,7 @@ extension Constants {
     enum StoryboardName {
         static let root = "Root"
         static let topMovies = "TopMovies"
+        static let search = "Search"
         static let movieDetail = "MovieDetail"
     }
     

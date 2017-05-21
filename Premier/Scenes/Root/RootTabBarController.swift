@@ -28,7 +28,13 @@ private extension RootTabBarController {
         topMoviesViewController.router = TopMoviesRouter()
         let topMoviesNavigationController = UINavigationController(rootViewController: topMoviesViewController)
         
-        viewControllers = [topMoviesNavigationController]
+        let searchViewController = SearchViewController.instantiate()
+        searchViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        searchViewController.model = SearchViewModel()
+        // TODO: router
+        let searchNavigationController = UINavigationController(rootViewController: searchViewController)
+        
+        viewControllers = [topMoviesNavigationController, searchNavigationController]
     }
     
 }
