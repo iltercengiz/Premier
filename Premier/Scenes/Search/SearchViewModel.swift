@@ -33,7 +33,9 @@ class SearchViewModel: MovieListViewModel {
             strongSelf.emit(change: strongSelf.state.reload(movies: movies))
             
             // If query return some movies, add query to last searches list.
-            strongSelf.lastSearchesManager.addSearchQuery(query)
+            if movies.isEmpty == false {
+                strongSelf.lastSearchesManager.addSearchQuery(query)
+            }
         }
     }
     
