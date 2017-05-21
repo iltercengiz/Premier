@@ -36,11 +36,6 @@ class LastSearchesManager {
         }
     }
     
-    deinit {
-        // Write the updated list to file.
-        NSKeyedArchiver.archiveRootObject(lastSearches, toFile: filePath)
-    }
-    
     func addSearchQuery(_ query: String) {
         // If already present remove it, it will be added to top again
         if let index = lastSearches.index(of: query) {
@@ -52,6 +47,8 @@ class LastSearchesManager {
         if lastSearches.count > Const.numberOfLastSearchesToKeep {
             lastSearches.removeLast()
         }
+        // Write the updated list to file.
+        NSKeyedArchiver.archiveRootObject(lastSearches, toFile: filePath)
     }
     
     func clearLastSearches() {
