@@ -27,7 +27,6 @@ private extension TopMoviesViewController {
     
     func setup() {
         title = Localization.topMovies.string(for: "TOP_MOVIES")
-        tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
         loadingLabel.text = Localization.common.string(for: "LOADING")
     }
     

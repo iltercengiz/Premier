@@ -19,14 +19,7 @@ class AppRouter {
     // MARK: - Presentations
     
     func presentMainFlow() {
-        let topMoviesViewController = TopMoviesViewController.instantiate()
-        topMoviesViewController.model = TopMoviesViewModel()
-        topMoviesViewController.router = TopMoviesRouter()
-        let navigationController = UINavigationController(rootViewController: topMoviesViewController)
-        
         let rootTabBarController = RootTabBarController.instantiate()
-        rootTabBarController.viewControllers = [navigationController]
-        
         appWindow?.rootViewController = rootTabBarController
         appWindow?.makeKeyAndVisible()
     }

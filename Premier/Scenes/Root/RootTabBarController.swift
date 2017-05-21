@@ -12,4 +12,23 @@ final class RootTabBarController: UITabBarController, StoryboardLoadable, Instan
     
     static var defaultStoryboardName: String = Constants.StoryboardName.root
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+}
+
+private extension RootTabBarController {
+    
+    func setup() {
+        let topMoviesViewController = TopMoviesViewController.instantiate()
+        topMoviesViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 0)
+        topMoviesViewController.model = TopMoviesViewModel()
+        topMoviesViewController.router = TopMoviesRouter()
+        let topMoviesNavigationController = UINavigationController(rootViewController: topMoviesViewController)
+        
+        viewControllers = [topMoviesNavigationController]
+    }
+    
 }
