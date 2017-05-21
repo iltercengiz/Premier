@@ -14,6 +14,7 @@ struct Localization {
     
     static let common = Localization(tableName: "Common")
     static let topMovies = Localization(tableName: "TopMovies")
+    static let search = Localization(tableName: "Search")
     
     // MARK: Localization
     

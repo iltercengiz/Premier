@@ -73,6 +73,7 @@
 		36A20A321ED210DD00443230 /* LastSearchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A311ED210DD00443230 /* LastSearchesTableViewCell.swift */; };
 		36A20A341ED217AC00443230 /* LastSearchesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A331ED217AC00443230 /* LastSearchesDelegate.swift */; };
 		36A20A361ED21B4E00443230 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A351ED21B4E00443230 /* SearchRouter.swift */; };
+		36A20A381ED2225100443230 /* Search.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A20A371ED2225100443230 /* Search.strings */; };
 		66FEAA6E9B84AA35CFBCAADF /* Pods_PremierSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */; };
 		7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874585AA1E6485D5616D1D /* Pods_PremierSwift.framework */; };
 /* End PBXBuildFile section */
@@ -157,6 +158,7 @@
 		36A20A311ED210DD00443230 /* LastSearchesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesTableViewCell.swift; sourceTree = "<group>"; };
 		36A20A331ED217AC00443230 /* LastSearchesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastSearchesDelegate.swift; sourceTree = "<group>"; };
 		36A20A351ED21B4E00443230 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		36A20A371ED2225100443230 /* Search.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Search.strings; sourceTree = "<group>"; };
 		45F7B29433F827EA65632873 /* Pods-PremierSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwiftTests/Pods-PremierSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		776BB60C6BD5B87A6EB6F38D /* Pods-PremierSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PremierSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PremierSwift/Pods-PremierSwift.release.xcconfig"; sourceTree = "<group>"; };
 		8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PremierSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -490,6 +492,7 @@
 			children = (
 				36A209FA1ECF342B00443230 /* Common.strings */,
 				36A209FC1ECF345000443230 /* TopMovies.strings */,
+				36A20A371ED2225100443230 /* Search.strings */,
 			);
 			path = "Localization Strings";
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				36A209F31ECF30DF00443230 /* Root.storyboard in Resources */,
 				365DC8221E5A099D005327AB /* Assets.xcassets in Resources */,
 				365DC8241E5A099D005327AB /* LaunchScreen.storyboard in Resources */,
+				36A20A381ED2225100443230 /* Search.strings in Resources */,
 				36A209FB1ECF342B00443230 /* Common.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,9 @@
+/* 
+  Search.strings
+  Premier
+
+  Created by Ilter Cengiz on 21/05/2017.
+  Copyright © 2017 Deliveroo. All rights reserved.
+*/
+
+"SEARCH_RETURNED_EMPTY" = "No movies found";

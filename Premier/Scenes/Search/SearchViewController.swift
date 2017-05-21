@@ -25,6 +25,32 @@ final class SearchViewController: MovieListViewController, StoryboardLoadable, I
         bindLastSearches()
     }
     
+    // MARK: Handlers
+    
+    override func handleStateChange(change: MovieListState.Change) {
+        super.handleStateChange(change: change)
+        switch change {
+        case .moviesChanged(let collectionChange):
+            switch collectionChange {
+            case .reload:
+                if model.state.movies.isEmpty {
+                    let alert = UIAlertController(title: Localization.search.string(for: "SEARCH_RETURNED_EMPTY"),
+                                                  message: nil,
+                                                  preferredStyle: .alert)
+                    let dismissAction = UIAlertAction(title: Localization.common.string(for: "DISMISS"),
+                                               style: .default,
+                                               handler: nil)
+                    alert.addAction(dismissAction)
+                    present(alert, animated: true, completion: nil)
+                }
+            default:
+                break
+            }
+        default:
+            break
+        }
+    }
+    
 }
 
 private extension SearchViewController {
