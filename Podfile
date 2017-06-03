@@ -10,11 +10,11 @@ def pods
   pod 'Reveal-SDK', :configurations => ['Debug']
 end
 
-target 'PremierSwift' do
+target 'Premier' do
   pods
 end
 
-target 'PremierSwiftTests' do
+target 'PremierTests' do
   pods
   pod 'OHHTTPStubs', :configurations => ['Debug']
   pod 'OHHTTPStubs/Swift', :configurations => ['Debug']

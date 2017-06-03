@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.4.0)
-  - Kingfisher (3.6.2)
-  - ObjectMapper (2.2.6)
+  - Kingfisher (3.10.0)
+  - ObjectMapper (2.2.7)
   - OHHTTPStubs (6.0.0):
     - OHHTTPStubs/Default (= 6.0.0)
   - OHHTTPStubs/Core (6.0.0)
@@ -31,12 +31,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
-  ObjectMapper: '042708195cc46c20871cbcbec0453826398273fd'
+  Kingfisher: 43a129d0f8cafa667224bd7130d7bc8ccb8c7751
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
   Reqres: 7027a575c1539c9635ff11ecf04d49cdf30a2f0a
   Reveal-SDK: 43be4e662864e937960d0d04d005135e29c4e53b
 
-PODFILE CHECKSUM: 71cc2cf2b5c28d26da642ed50ae6793e911db17e
+PODFILE CHECKSUM: fee4d0917a7947218004ee0d1f73e44ccd2551d9
 
 COCOAPODS: 1.2.1
