@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -676,7 +676,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = "Ilter Cengiz";
 				TargetAttributes = {
 					F840A5DB1D945CF8009325F7 = {
 						CreatedOnToolsVersion = 8.0;
@@ -691,7 +691,7 @@
 				};
 			};
 			buildConfigurationList = F840A5D71D945CF8009325F7 /* Build configuration list for PBXProject "Premier" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1057,7 +1057,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PremierTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = deliveroo.PremierSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = info.iltercengiz.iOS.PremierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Premier.app/Premier";
@@ -1072,7 +1072,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PremierTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = deliveroo.PremierSwiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = info.iltercengiz.iOS.PremierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Premier.app/Premier";
