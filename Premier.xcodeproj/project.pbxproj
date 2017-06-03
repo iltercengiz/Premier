@@ -75,7 +75,6 @@
 		36A20A361ED21B4E00443230 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A20A351ED21B4E00443230 /* SearchRouter.swift */; };
 		36A20A381ED2225100443230 /* Search.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36A20A371ED2225100443230 /* Search.strings */; };
 		66FEAA6E9B84AA35CFBCAADF /* Pods_PremierSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C369123972A74E9983451 /* Pods_PremierSwiftTests.framework */; };
-		7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E874585AA1E6485D5616D1D /* Pods_PremierSwift.framework */; };
 		AF76C92BBF39A5D0C5A80234 /* Pods_Premier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C497685D35B324AD418CAB5 /* Pods_Premier.framework */; };
 		BF37A6BE4F7184F3D66D2537 /* Pods_PremierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461835A4F421C3DAC0D858A0 /* Pods_PremierTests.framework */; };
 /* End PBXBuildFile section */
@@ -181,7 +180,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9BFADA6D3DE4797D9832B5 /* Pods_PremierSwift.framework in Frameworks */,
 				AF76C92BBF39A5D0C5A80234 /* Pods_Premier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
