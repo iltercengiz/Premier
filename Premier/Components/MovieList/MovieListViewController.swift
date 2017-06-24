@@ -53,7 +53,7 @@ class MovieListViewController: UIViewController {
     // MARK: - Actions
     
     /// Used to set as action for refresh control
-    func reloadMovies() {
+    @objc func reloadMovies() {
         model.reloadMovies()
     }
     
@@ -146,8 +146,8 @@ private extension MovieListViewController {
             var size = UILayoutFittingCompressedSize
             size.width = tableView.bounds.size.width
             let height = CGFloat(ceilf(Float(prototypeCell.systemLayoutSizeFitting(size,
-                                                                                   withHorizontalFittingPriority: UILayoutPriorityRequired,
-                                                                                   verticalFittingPriority: 251).height)))
+                                                                                   withHorizontalFittingPriority: UILayoutPriority.required,
+                                                                                   verticalFittingPriority:UILayoutPriority(rawValue: 251)).height)))
             cache[indexPath] = height
             return height
         }

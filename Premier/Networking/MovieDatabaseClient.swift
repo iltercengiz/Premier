@@ -33,7 +33,7 @@ class MovieDatabaseClient {
         #endif
     }
     
-    @discardableResult func execute<T: Mappable>(
+    @discardableResult func execute<T>(
         _ request: URLRequestConvertible,
         handler: @escaping (_ response: Response<T>) -> Void) -> URLSessionTask? {
         let dataRequest = manager.request(request)
