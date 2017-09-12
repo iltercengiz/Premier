@@ -16,6 +16,7 @@ class TopMoviesViewModel: MovieListViewModel {
     var errorHandler: ((MovieListError) -> Void)?
     
     func reloadMovies() {
+        Stubber.stubTopRatedPage1()
         fetchMovies(at: 1) {
             [weak self] (movies: [Movie]) in
             guard let strongSelf = self else { return }
@@ -24,6 +25,7 @@ class TopMoviesViewModel: MovieListViewModel {
     }
     
     func loadMoreMovies() {
+        Stubber.stubTopRatedPage2()
         guard state.hasNextPage else { return }
         fetchMovies(at: state.currentPage + 1) {
             [weak self] (movies: [Movie]) in

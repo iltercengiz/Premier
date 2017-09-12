@@ -26,6 +26,7 @@ class SearchViewModel: MovieListViewModel {
     }
     
     func reloadMovies() {
+        Stubber.stubSearch()
         guard let query = currentQuery else { return }
         fetchMovies(with: query, page: 1) {
             [weak self] (movies: [Movie]) in

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362C0E321F33DD94006B836A /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 36A20A261ED1DE5400443230 /* search.json */; };
+		362C0E331F33DD97006B836A /* top_rated_page_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 365DC8711E5B6600005327AB /* top_rated_page_2.json */; };
+		362C0E341F33DD9B006B836A /* top_rated_page_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 365DC82E1E5A1E53005327AB /* top_rated_page_1.json */; };
+		362C0E351F33DD9E006B836A /* Stubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DC8301E5A2149005327AB /* Stubber.swift */; };
 		365DC8221E5A099D005327AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365DC81F1E5A099D005327AB /* Assets.xcassets */; };
 		365DC8241E5A099D005327AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365DC8211E5A099D005327AB /* LaunchScreen.storyboard */; };
 		365DC82B1E5A1DDD005327AB /* TopRatedMoviesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DC82A1E5A1DDD005327AB /* TopRatedMoviesRequest.swift */; };
@@ -715,6 +719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36A209EA1ECF27E400443230 /* MovieListTableViewCell.xib in Resources */,
+				362C0E331F33DD97006B836A /* top_rated_page_2.json in Resources */,
 				369C80131EAF2FB7008B37DD /* MovieDetail.storyboard in Resources */,
 				36A209FD1ECF345000443230 /* TopMovies.strings in Resources */,
 				365DC85D1E5A3667005327AB /* LoadingTableViewCell.xib in Resources */,
@@ -722,7 +727,9 @@
 				365DC83E1E5A2C06005327AB /* TopMovies.storyboard in Resources */,
 				36A209F31ECF30DF00443230 /* Root.storyboard in Resources */,
 				365DC8221E5A099D005327AB /* Assets.xcassets in Resources */,
+				362C0E341F33DD9B006B836A /* top_rated_page_1.json in Resources */,
 				365DC8241E5A099D005327AB /* LaunchScreen.storyboard in Resources */,
+				362C0E321F33DD94006B836A /* search.json in Resources */,
 				36A20A381ED2225100443230 /* Search.strings in Resources */,
 				36A209FB1ECF342B00443230 /* Common.strings in Resources */,
 			);
@@ -922,6 +929,7 @@
 				365DC8441E5A2C84005327AB /* StoryboardLoadable.swift in Sources */,
 				36A20A361ED21B4E00443230 /* SearchRouter.swift in Sources */,
 				365DC8361E5A2A10005327AB /* AppDelegate.swift in Sources */,
+				362C0E351F33DD9E006B836A /* Stubber.swift in Sources */,
 				36A209EE1ECF29FD00443230 /* MovieListState.swift in Sources */,
 				365DC8381E5A2A37005327AB /* AppRouter.swift in Sources */,
 				367A59E61E59DF8700F3268A /* Response.swift in Sources */,
