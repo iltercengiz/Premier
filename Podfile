@@ -12,6 +12,8 @@ end
 
 target 'Premier' do
   pods
+  pod 'OHHTTPStubs', :configurations => ['Debug']
+  pod 'OHHTTPStubs/Swift', :configurations => ['Debug']
 end
 
 target 'PremierTests' do
