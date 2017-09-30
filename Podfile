@@ -7,7 +7,6 @@ def pods
   pod 'Reqres', :configurations => ['Debug']
   pod 'ObjectMapper'
   pod 'Kingfisher'
-  pod 'Reveal-SDK', :configurations => ['Debug']
 end
 
 target 'Premier' do
