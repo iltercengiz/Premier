@@ -635,7 +635,6 @@
 				54CD3CCCC046CC62FFF8D928 /* [CP] Check Pods Manifest.lock */,
 				F840A5D81D945CF8009325F7 /* Sources */,
 				F840A5D91D945CF8009325F7 /* Frameworks */,
-				367A59DF1E59DED600F3268A /* Increment Build Number */,
 				F840A5DA1D945CF8009325F7 /* Resources */,
 				CB43217A92376C8FB0DD310C /* [CP] Embed Pods Frameworks */,
 				3115BF76F109F345722D725C /* [CP] Copy Pods Resources */,
@@ -780,20 +779,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Premier/Pods-Premier-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		367A59DF1E59DED600F3268A /* Increment Build Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Increment Build Number";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" == \"Debug\" ]; then\n    buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n    buildNumber=$(($buildNumber + 1))\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nfi";
 		};
 		54CD3CCCC046CC62FFF8D928 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
